@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://yourDomain.tld',
-    title: 'Gatsby Intro',
-    description: 'Gatsby Intro Project',
+    title: 'Blog',
+    description: 'Blog Project',
     image:
       'https://inhabitat.com/wp-content/blogs.dir/1/files/2014/02/Canada-polar-bears-Google-Street-View-1.jpg',
   },
