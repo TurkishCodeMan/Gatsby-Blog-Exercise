@@ -1,0 +1,27 @@
+---
+date: 2022-01-22
+title: Post One  Blog
+description: This is my Post One post.
+---
+
+import { graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+
+export const query = graphql`
+  query SmashWuery {
+    file(name: { eq: "smashburger" }) {
+      childrenImageSharp {
+        gatsbyImageData(placeholder: BLURRED)
+      }
+    }
+  }
+`;
+
+# Series
+
+<GatsbyImage
+  image={getImage(props.data.file.childrenImageSharp[0])}
+  alt="More information about this site"
+/>
+
+Post One Series Friends !!
