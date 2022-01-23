@@ -46,11 +46,11 @@ export default function SanityMovie({ data }) {
       <ul>
         {movie.crewMembers.map((person) => (
           <li key={person.person.name}>
-            <p>{person.person.name}</p>
-            {person.person.image && (
+            <p>{person.person?.name}</p>
+            {person.person?.image && (
               <div className={imageWrapper}>
                 <GatsbyImage
-                  image={person.person.image?.asset.gatsbyImageData}
+                  image={person.person?.image?.asset?.gatsbyImageData}
                   alt={person.person.name}
                 />
               </div>
